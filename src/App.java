@@ -3,29 +3,46 @@ public class App {
         Menu menu = new Menu();
         
         // add burgers to menu
-        menu.addItem(new MenuItem("Cheeseburger", "Burgers", 9.99));
-        menu.addItem(new MenuItem("BBQ Burger", "Burgers", 10.99));
-        menu.addItem(new MenuItem("Mushroom Swiss Burger", "Burgers", 11.99));
+        MenuItem cheeseburger = new MenuItem("Cheeseburger", "Burgers", 9.99);
+        menu.addItem(cheeseburger);
+        MenuItem bbqBurger = new MenuItem("BBQ Burger", "Burgers", 11.99);
+        menu.addItem(bbqBurger);
+        MenuItem msBurger = new MenuItem("Mushroom Swiss Burger", "Burgers", 11.99);
+        menu.addItem(msBurger);
 
         // add sandwhiches to menu
-        menu.addItem(new MenuItem("Patty Melt", "Sandwhiches", 9.99));
-        menu.addItem(new MenuItem("BLT", "Sandwhiches", 7.99));
-        menu.addItem(new MenuItem("Pulled Pork Sandwhich", "Sandwhiches", 10.99));
- 
+        MenuItem pattyMelt = new MenuItem("Patty Melt", "Sandwhiches", 10.99);
+        menu.addItem(pattyMelt);
+        MenuItem blt = new MenuItem("BLT", "Sandwhiches", 8.99);
+        menu.addItem(blt);
+        MenuItem pulledPork = new MenuItem("Pulled Pork Sandwhich", "Sandwhiches", 10.99);
+        menu.addItem(pulledPork);
+
         // add steaks to menu
-        menu.addItem(new MenuItem("New York Strip", "Steak", 12.99));
-        menu.addItem(new MenuItem("Ribeye", "Steak", 17.99));
-        menu.addItem(new MenuItem("Filet Mignon", "Steak", 21.99));
+        MenuItem nyStrip = new MenuItem("New York Strip", "Steak", 14.99);
+        menu.addItem(nyStrip);
+        MenuItem ribeye = new MenuItem("Ribeye", "Steak", 17.99);
+        menu.addItem(ribeye);
+        MenuItem filet = new MenuItem("Filet Mignon", "Steak", 21.99);
+        menu.addItem(filet);
 
         // add sodas to menu
-        menu.addItem(new MenuItem("Dr. Pepper", "Soda", 1.99));
-        menu.addItem(new MenuItem("Sprite", "Soda", 1.99));
-        menu.addItem(new MenuItem("Root Beer", "Soda", 1.99));
+        MenuItem drPepper = new MenuItem("Dr. Pepper", "Soda", 1.99);
+        menu.addItem(drPepper);
+        MenuItem sprite = new MenuItem("Sprite", "Soda", 1.99);
+        menu.addItem(sprite);
+        MenuItem rootBeer = new MenuItem("Root Beer", "Soda", 1.99);
+        menu.addItem(rootBeer);
 
-        //add non-alcoholic drinks to menu
-        menu.addItem(new MenuItem("Lemonade", "Non-Alcoholic", 1.99));
-        menu.addItem(new MenuItem("Sweet Tea", "Non-Alcoholic", 1.99));
-        menu.addItem(new MenuItem("Milkshake", "Non-alcoholic", 3.99));
+        // add non-alcoholic drinks to menu
+        MenuItem lemonade = new MenuItem("Lemonade", "Non-Alcoholic", 2.99);
+        menu.addItem(lemonade);
+        MenuItem sweetTea = new MenuItem("Sweet Tea", "Non-Alcoholic", 2.99);
+        menu.addItem(sweetTea);
+        MenuItem milkshake = new MenuItem("Milkshake", "Non-Alcoholic", 4.99);
+        menu.addItem(milkshake);
+
+        milkshake.updatePrice(10.00);
 
         menu.displayMenu();
 

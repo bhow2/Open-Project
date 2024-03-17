@@ -22,6 +22,10 @@ public class MenuItem {
 
     public double getPrice() {return price;}
 
+    public void updatePrice(double price){
+        this.price = price;
+    }
+
     public String getCategory() {return category;}
 
     public int getItemNumber() {return itemNumber;}

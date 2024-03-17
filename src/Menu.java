@@ -10,8 +10,15 @@ public class Menu{
         menuSet = new LinkedHashSet<>();
     }
 
-    public void addItem(MenuItem item){
-        menuSet.add(item);
+    public boolean addItem(MenuItem item){
+        return (menuSet.add(item));
+    }
+
+    public boolean removeItem(MenuItem item){
+        if (menuSet.contains(item)){
+            return menuSet.remove(item);
+        }
+        return false;
     }
     
     public Set<MenuItem> getItems(){
